@@ -38,3 +38,9 @@ In addition to the API documentation, which is also available [online](https://s
 If you find bugs or other problems with this software, we would appreciate hearing about them.  Please send electronic mail to [bugs@dcmtk.org](mailto:bugs@dcmtk.org).  Please try to describe the problem in detail and, if possible, give a suggested fix.  For more details on how to contribute, see the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 For general questions on how to compile, install or use the toolkit, we recommend the [public discussion forum](https://forum.dcmtk.org/).
+
+# Amsterdam UMC fork
+
+The Amsterdam UMC specific branch adds some functionality, which is mostly related to the use of Philips MR scanners.
+For more information, contact P.F.C. Groot @ Amsterdam UMC.
+
