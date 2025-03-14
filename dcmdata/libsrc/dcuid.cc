@@ -643,6 +643,41 @@ static const UIDNameMap uidNameMap[] = {
     { UID_DRAFT_UnifiedProcedureStepPullSOPClass,                                "UnifiedProcedureStepPullTrial",                                      "DRAFT_UnifiedProcedureStepPullSOPClass",                             { EUS_DICOM, EUV_Draft, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
     { UID_DRAFT_UnifiedProcedureStepEventSOPClass,                               "UnifiedProcedureStepEventTrial",                                     "DRAFT_UnifiedProcedureStepEventSOPClass",                            { EUS_DICOM, EUV_Draft, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
 
+#ifdef ENABLE_PRIVATE_SOPCLASSES
+    // Private UIDs
+
+    // Philips Medical Systems
+    { UID_PrivatePhilipsSpecialisedXAStorage,                                    NULL /* no standard definition */,                                    "PrivatePhilipsSpecialisedXAStorageSOPClass",                         { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsCXImageStorage,                                          NULL /* no standard definition */,                                    "PrivatePhilipsCXImageStorageSOPClass",                               { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilips3DPresentationStateStorage,                              NULL /* no standard definition */,                                    "PrivatePhilips3DPresentationStateStorageSOPClass",                   { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsVRMLStorage,                                             NULL /* no standard definition */,                                    "PrivatePhilipsVRMLStorageSOPClass",                                  { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsVolumeSetStorage,                                        NULL /* no standard definition */,                                    "PrivatePhilipsVolumeSetStorageSOPClass",                             { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_RETIRED_PrivatePhilipsVolumeStorage,                                   NULL /* no standard definition */,                                    "RETIRED_PrivatePhilipsVolumeStorageSOPClass",                        { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsVolumeStorage,                                           NULL /* no standard definition */,                                    "PrivatePhilipsVolumeStorageSOPClass",                                { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_RETIRED_PrivatePhilips3DObjectStorage,                                 NULL /* no standard definition */,                                    "RETIRED_PrivatePhilips3DObjectStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilips3DObjectStorage,                                         NULL /* no standard definition */,                                    "PrivatePhilips3DObjectStorageSOPClass",                              { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_RETIRED_PrivatePhilipsSurfaceStorage,                                  NULL /* no standard definition */,                                    "RETIRED_PrivatePhilipsSurfaceStorageSOPClass",                       { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsSurfaceStorage,                                          NULL /* no standard definition */,                                    "PrivatePhilipsSurfaceStorageSOPClass",                               { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsCompositeObjectStorage,                                  NULL /* no standard definition */,                                    "PrivatePhilipsCompositeObjectStorageSOPClass",                       { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRCardioProfileStorage,                                  NULL /* no standard definition */,                                    "PrivatePhilipsMRCardioProfileStorageSOPClass",                       { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_RETIRED_PrivatePhilipsMRCardioStorage,                                 NULL /* no standard definition */,                                    "RETIRED_PrivatePhilipsMRCardioStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRCardioStorage,                                         NULL /* no standard definition */,                                    "PrivatePhilipsMRCardioStorageSOPClass",                              { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsCTSyntheticImageStorage,                                 NULL /* no standard definition */,                                    "PrivatePhilipsCTSyntheticImageStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRSyntheticImageStorage,                                 NULL /* no standard definition */,                                    "PrivatePhilipsMRSyntheticImageStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_RETIRED_PrivatePhilipsMRCardioAnalysisStorage,                         NULL /* no standard definition */,                                    "RETIRED_PrivatePhilipsMRCardioAnalysisStorageSOPClass",              { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRCardioAnalysisStorage,                                 NULL /* no standard definition */,                                    "PrivatePhilipsMRCardioAnalysisStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsCXSyntheticImageStorage,                                 NULL /* no standard definition */,                                    "PrivatePhilipsCXSyntheticImageStorageSOPClass",                      { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsPerfusionStorage,                                        NULL /* no standard definition */,                                    "PrivatePhilipsPerfusionStorageSOPClass",                             { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsPerfusionImageStorage,                                   NULL /* no standard definition */,                                    "PrivatePhilipsPerfusionImageStorageSOPClass",                        { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsXRayMFStorage,                                           NULL /* no standard definition */,                                    "PrivatePhilipsXRayMFStorageSOPClass",                                { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsLiveRunStorage,                                          NULL /* no standard definition */,                                    "PrivatePhilipsLiveRunStorageSOPClass",                               { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsRunStorage,                                              NULL /* no standard definition */,                                    "PrivatePhilipsRunStorageSOPClass",                                   { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsReconstructionStorage,                                   NULL /* no standard definition */,                                    "PrivatePhilipsReconstructionStorageSOPClass",                        { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRSpectrumStorage,                                       NULL /* no standard definition */,                                    "PrivatePhilipsMRSpectrumStorageSOPClass",                            { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRSeriesDataStorage,                                     NULL /* no standard definition */,                                    "PrivatePhilipsMRSeriesDataStorageSOPClass",                          { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+    { UID_PrivatePhilipsMRExamcardStorage,                                       NULL /* no standard definition */,                                    "PrivatePhilipsMRExamcardStorageSOPClass",                            { EUS_other, EUV_Private, EUT_SOPClass,     EUST_other,   EUIT_other,            UID_PROP_NONE } },
+#endif
+
     // end of the list
     { NULL, NULL, NULL, { EUS_other, EUV_other, EUT_other, EUST_other, EUIT_other, UID_PROP_NONE } }
 };
@@ -866,6 +901,43 @@ const char* dcmAllStorageSOPClassUIDs[] = {
     UID_DICONDE_EddyCurrentMultiframeImageStorage,
     UID_DICONDE_ThermographyImageStorage,
     UID_DICONDE_ThermographyMultiFrameImageStorage,
+
+#ifdef ENABLE_PRIVATE_SOPCLASSES
+    // Private storage SOP classes
+
+    // Philips Medical Systems
+    UID_PrivatePhilipsSpecialisedXAStorage,
+    UID_PrivatePhilipsCXImageStorage,
+    UID_PrivatePhilips3DPresentationStateStorage,
+    UID_PrivatePhilipsVRMLStorage,
+    UID_PrivatePhilipsVolumeSetStorage,
+    UID_RETIRED_PrivatePhilipsVolumeStorage,
+    UID_PrivatePhilipsVolumeStorage,
+    UID_RETIRED_PrivatePhilips3DObjectStorage,
+    UID_PrivatePhilips3DObjectStorage,
+    UID_RETIRED_PrivatePhilipsSurfaceStorage,
+    UID_PrivatePhilipsSurfaceStorage,
+    UID_PrivatePhilipsCompositeObjectStorage,
+    UID_PrivatePhilipsMRCardioProfileStorage,
+    UID_RETIRED_PrivatePhilipsMRCardioStorage,
+    UID_PrivatePhilipsMRCardioStorage,
+    UID_PrivatePhilipsCTSyntheticImageStorage,
+    UID_PrivatePhilipsMRSyntheticImageStorage,
+    UID_RETIRED_PrivatePhilipsMRCardioAnalysisStorage,
+    UID_PrivatePhilipsMRCardioAnalysisStorage,
+    UID_PrivatePhilipsCXSyntheticImageStorage,
+    UID_PrivatePhilipsPerfusionStorage,
+    UID_PrivatePhilipsPerfusionImageStorage,
+    UID_PrivatePhilipsXRayMFStorage,
+    UID_PrivatePhilipsLiveRunStorage,
+    UID_PrivatePhilipsRunStorage,
+    UID_PrivatePhilipsReconstructionStorage,
+    UID_PrivatePhilipsMRSpectrumStorage,
+    UID_PrivatePhilipsMRSeriesDataStorage,
+    UID_PrivatePhilipsMRColorImageStorage,
+    UID_PrivatePhilipsMRExamcardStorage,
+#endif
+
     NULL
 };
 
@@ -1516,6 +1588,41 @@ static const DcmModalityTable modalities[] = {
     { UID_RETIRED_VLImageStorage,                                  "VLr",  768 * 576 * 3 },
     { UID_RETIRED_VLMultiframeImageStorage,                        "VMr",  768 * 576 * 3 },
     { UID_RETIRED_XRayAngiographicBiPlaneImageStorage,             "XB",   512 * 512 * 2 },
+#ifdef ENABLE_PRIVATE_SOPCLASSES
+    // Private storage SOP classes
+
+    // Philips Medical Systems
+    { UID_PrivatePhilipsSpecialisedXAStorage,                      "pmsXA",   4096 },
+    { UID_PrivatePhilipsCXImageStorage,                            "pmsCX",   4096 },
+    { UID_PrivatePhilips3DPresentationStateStorage,                "pmsPS3",  4096 },
+    { UID_PrivatePhilipsVRMLStorage,                               "pmsVRML", 4096 },
+    { UID_PrivatePhilipsVolumeSetStorage,                          "pmsVS",   4096 },
+    { UID_RETIRED_PrivatePhilipsVolumeStorage,                     "pmsVS",   4096 },
+    { UID_PrivatePhilipsVolumeStorage,                             "pmsV",    4096 },
+    { UID_RETIRED_PrivatePhilips3DObjectStorage,                   "pms3DO",  4096 },
+    { UID_PrivatePhilips3DObjectStorage,                           "pms3DO",  4096 },
+    { UID_RETIRED_PrivatePhilipsSurfaceStorage,                    "pmsSf",   4096 },
+    { UID_PrivatePhilipsSurfaceStorage,                            "pmsSf",   4096 },
+    { UID_PrivatePhilipsCompositeObjectStorage,                    "pmsCO",   4096 },
+    { UID_PrivatePhilipsMRCardioProfileStorage,                    "pmsMRCP", 4096 },
+    { UID_RETIRED_PrivatePhilipsMRCardioStorage,                   "pmsMRCP", 4096 },
+    { UID_PrivatePhilipsMRCardioStorage,                           "pmsMRC",  4096 },
+    { UID_PrivatePhilipsCTSyntheticImageStorage,                   "pmsCTSy", 4096 },
+    { UID_PrivatePhilipsMRSyntheticImageStorage,                   "pmsMRSy", 4096 },
+    { UID_RETIRED_PrivatePhilipsMRCardioAnalysisStorage,           "pmsMRCA", 4096 },
+    { UID_PrivatePhilipsMRCardioAnalysisStorage,                   "pmsMRCA", 4096 },
+    { UID_PrivatePhilipsCXSyntheticImageStorage,                   "pmsCXSy", 4096 },
+    { UID_PrivatePhilipsPerfusionStorage,                          "pmsPf",   4096 },
+    { UID_PrivatePhilipsPerfusionImageStorage,                     "pmsPfI",  4096 },
+    { UID_PrivatePhilipsXRayMFStorage,                             "pmsXMF",  4096 },
+    { UID_PrivatePhilipsLiveRunStorage,                            "pmsLR",   4096 },
+    { UID_PrivatePhilipsRunStorage,                                "pmsR",    4096 },
+    { UID_PrivatePhilipsReconstructionStorage,                     "pmsRec",  4096 },
+    { UID_PrivatePhilipsMRSpectrumStorage,                         "pmsMRs",  4096 },
+    { UID_PrivatePhilipsMRSeriesDataStorage,                       "pmsMRsr", 4096 },
+    { UID_PrivatePhilipsMRColorImageStorage,                       "pmsMRCI", 4096 },
+    { UID_PrivatePhilipsMRExamcardStorage,                         "pmsEC",   4096 },
+#endif
     // draft
     { UID_DRAFT_RTBeamsDeliveryInstructionStorage,                 "RB_d", 4096 },  /* was "RBd" */
     { UID_DRAFT_SRAudioStorage,                                    "SR_a", 4096 },  /* was "SRw" */

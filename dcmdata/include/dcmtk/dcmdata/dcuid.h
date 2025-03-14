@@ -1056,6 +1056,43 @@ DCMTK_DCMDATA_EXPORT unsigned long dcmGuessModalityBytes(const char *sopClassUID
 // Private SOP Class UID used to shutdown external network applications
 #define UID_PrivateShutdownSOPClass                                "1.2.276.0.7230010.3.4.1915765545.18030.917282194.0"
 
+#ifdef ENABLE_PRIVATE_SOPCLASSES
+/*
+ ** Private UIDs Philips Medical Systems (PMS)
+ */
+ 
+/* Private Philips SOP Class UIDs  */
+#define UID_PrivatePhilipsSpecialisedXAStorage                     "1.3.46.670589.2.3.1.1"
+#define UID_PrivatePhilipsCXImageStorage                           "1.3.46.670589.2.4.1.1"
+#define UID_PrivatePhilips3DPresentationStateStorage               "1.3.46.670589.2.5.1.1"
+#define UID_PrivatePhilipsVRMLStorage                              "1.3.46.670589.2.8.1.1"
+#define UID_PrivatePhilipsVolumeSetStorage                         "1.3.46.670589.2.11.1.1"
+#define UID_RETIRED_PrivatePhilipsVolumeStorage                    "1.3.46.670589.5.0.1"
+#define UID_PrivatePhilipsVolumeStorage                            "1.3.46.670589.5.0.1.1"
+#define UID_RETIRED_PrivatePhilips3DObjectStorage                  "1.3.46.670589.5.0.2"
+#define UID_PrivatePhilips3DObjectStorage                          "1.3.46.670589.5.0.2.1"
+#define UID_RETIRED_PrivatePhilipsSurfaceStorage                   "1.3.46.670589.5.0.3"
+#define UID_PrivatePhilipsSurfaceStorage                           "1.3.46.670589.5.0.3.1"
+#define UID_PrivatePhilipsCompositeObjectStorage                   "1.3.46.670589.5.0.4"
+#define UID_PrivatePhilipsMRCardioProfileStorage                   "1.3.46.670589.5.0.7"
+#define UID_RETIRED_PrivatePhilipsMRCardioStorage                  "1.3.46.670589.5.0.8"
+#define UID_PrivatePhilipsMRCardioStorage                          "1.3.46.670589.5.0.8.1"
+#define UID_PrivatePhilipsCTSyntheticImageStorage                  "1.3.46.670589.5.0.9"
+#define UID_PrivatePhilipsMRSyntheticImageStorage                  "1.3.46.670589.5.0.10"
+#define UID_RETIRED_PrivatePhilipsMRCardioAnalysisStorage          "1.3.46.670589.5.0.11"
+#define UID_PrivatePhilipsMRCardioAnalysisStorage                  "1.3.46.670589.5.0.11.1"
+#define UID_PrivatePhilipsCXSyntheticImageStorage                  "1.3.46.670589.5.0.12"
+#define UID_PrivatePhilipsPerfusionStorage                         "1.3.46.670589.5.0.13"
+#define UID_PrivatePhilipsPerfusionImageStorage                    "1.3.46.670589.5.0.14"
+#define UID_PrivatePhilipsXRayMFStorage                            "1.3.46.670589.7.8.1618510091"
+#define UID_PrivatePhilipsLiveRunStorage                           "1.3.46.670589.7.8.1618510092"
+#define UID_PrivatePhilipsRunStorage                               "1.3.46.670589.7.8.16185100129"
+#define UID_PrivatePhilipsReconstructionStorage                    "1.3.46.670589.7.8.16185100130"
+#define UID_PrivatePhilipsMRSpectrumStorage                        "1.3.46.670589.11.0.0.12.1"
+#define UID_PrivatePhilipsMRSeriesDataStorage                      "1.3.46.670589.11.0.0.12.2"
+#define UID_PrivatePhilipsMRColorImageStorage                      "1.3.46.670589.11.0.0.12.3"
+#define UID_PrivatePhilipsMRExamcardStorage                        "1.3.46.670589.11.0.0.12.4"
+#endif
 
 /* DRAFT SUPPLEMENTS - EXPERIMENTAL USE ONLY */
 

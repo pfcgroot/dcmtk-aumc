@@ -842,6 +842,38 @@ static E_DirRecType sopClassToRecordType(const OFString &sopClass)
         result = ERT_Annotation;
     else if (compare(sopClass, UID_InventoryStorage))
         result = ERT_Inventory;
+#ifdef ENABLE_PRIVATE_SOPCLASSES
+    else if (compare(sopClass, UID_PrivatePhilipsSpecialisedXAStorage) ||
+             compare(sopClass, UID_PrivatePhilipsCXImageStorage) ||
+             compare(sopClass, UID_PrivatePhilips3DPresentationStateStorage) ||
+             compare(sopClass, UID_PrivatePhilipsVRMLStorage) ||
+             compare(sopClass, UID_PrivatePhilipsVolumeSetStorage) ||
+             compare(sopClass, UID_RETIRED_PrivatePhilipsVolumeStorage) ||
+             compare(sopClass, UID_PrivatePhilipsVolumeStorage) ||
+             compare(sopClass, UID_RETIRED_PrivatePhilips3DObjectStorage) ||
+             compare(sopClass, UID_PrivatePhilips3DObjectStorage) ||
+             compare(sopClass, UID_RETIRED_PrivatePhilipsSurfaceStorage) ||
+             compare(sopClass, UID_PrivatePhilipsSurfaceStorage) ||
+             compare(sopClass, UID_PrivatePhilipsCompositeObjectStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRCardioProfileStorage) ||
+             compare(sopClass, UID_RETIRED_PrivatePhilipsMRCardioStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRCardioStorage) ||
+             compare(sopClass, UID_PrivatePhilipsCTSyntheticImageStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRSyntheticImageStorage) ||
+             compare(sopClass, UID_RETIRED_PrivatePhilipsMRCardioAnalysisStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRCardioAnalysisStorage) ||
+             compare(sopClass, UID_PrivatePhilipsCXSyntheticImageStorage) ||
+             compare(sopClass, UID_PrivatePhilipsPerfusionStorage) ||
+             compare(sopClass, UID_PrivatePhilipsPerfusionImageStorage) ||
+             compare(sopClass, UID_PrivatePhilipsXRayMFStorage) ||
+             compare(sopClass, UID_PrivatePhilipsLiveRunStorage) ||
+             compare(sopClass, UID_PrivatePhilipsRunStorage) ||
+             compare(sopClass, UID_PrivatePhilipsReconstructionStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRSpectrumStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRSeriesDataStorage) ||
+             compare(sopClass, UID_PrivatePhilipsMRExamcardStorage))
+        result = ERT_Private;
+#endif
     return result;
 }
 

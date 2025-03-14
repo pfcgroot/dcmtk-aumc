@@ -45,6 +45,15 @@ else()
   message(STATUS "Info: DCMTK's builtin private dictionary support will be disabled")
 endif()
 
+# Private SOP classes
+if(DCMTK_ENABLE_PRIVATE_SOPCLASSES)
+  set(ENABLE_PRIVATE_SOPCLASSES 1)
+  message(STATUS "Info: DCMTK's builtin private SOP classes support will be enabled")
+else()
+  set(ENABLE_PRIVATE_SOPCLASSES "")
+  message(STATUS "Info: DCMTK's builtin private SOP classes support will be disabled")
+endif()
+
 # Thread support
 if(DCMTK_WITH_THREADS)
   set(WITH_THREADS 1)
